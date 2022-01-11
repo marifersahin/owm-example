@@ -1,3 +1,5 @@
+import React from "react";
+
 function App() {
   return (
     <header className="h-screen bg-blue-900 text-blue-100">
