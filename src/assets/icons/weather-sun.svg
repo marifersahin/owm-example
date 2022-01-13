@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 24" xml:space="preserve">
+	 viewBox="0 0 24 24" xml:space="preserve" fill="#ffc700">
 <title>weather-sun</title>
 	<path d="M12,19.5c-4.135,0-7.5-3.365-7.5-7.5S7.865,4.5,12,4.5s7.5,3.365,7.5,7.5S16.135,19.5,12,19.5z M12,6c-3.308,0-6,2.692-6,6
 		s2.692,6,6,6s6-2.692,6-6S15.308,6,12,6z"/>
