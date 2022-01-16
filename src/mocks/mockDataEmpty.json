@@ -1,0 +1,12 @@
+{
+  "cod": "200",
+  "message": 0.0032,
+  "cnt": 36,
+  "list": [],
+  "city": {
+    "id": 6940463,
+    "name": "Altstadt",
+    "coord": { "lat": 48.137, "lon": 11.5752 },
+    "country": "none"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "cod": "200",
+  "message": 0.0032,
+  "cnt": 36,
+  "list": [
+    {
+      "dt": 1487451600,
+      "main": {
+        "temp": 271.239,
+        "temp_min": 271.239,
+        "temp_max": 271.239,
+        "pressure": 963.39,
+        "sea_level": 1038.21,
+        "grnd_level": 963.39,
+        "humidity": 93,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "clouds": { "all": 0 },
+      "wind": { "speed": 2.42, "deg": 95.5017 },
+      "rain": {},
+      "snow": {},
+      "sys": { "pod": "n" },
+      "dt_txt": "2017-02-18 21:00:00"
+    },
+    {
+      "dt": 1487462400,
+      "main": {
+        "temp": 269.553,
+        "temp_min": 269.553,
+        "temp_max": 269.553,
+        "pressure": 962.39,
+        "sea_level": 1037.44,
+        "grnd_level": 962.39,
+        "humidity": 92,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "clouds": { "all": 0 },
+      "wind": { "speed": 1.96, "deg": 101.004 },
+      "rain": {},
+      "snow": {},
+      "sys": { "pod": "n" },
+      "dt_txt": "2017-02-19 00:00:00"
+    },
+    {
+      "dt": 1487473200,
+      "main": {
+        "temp": 268.198,
+        "temp_min": 268.198,
+        "temp_max": 268.198,
+        "pressure": 961.28,
+        "sea_level": 1036.51,
+        "grnd_level": 961.28,
+        "humidity": 84,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "clouds": { "all": 0 },
+      "wind": { "speed": 1.06, "deg": 121.5 },
+      "rain": {},
+      "snow": {},
+      "sys": { "pod": "n" },
+      "dt_txt": "2017-02-19 03:00:00"
+    }
+  ],
+  "city": {
+    "id": 6940463,
+    "name": "Altstadt",
+    "coord": { "lat": 48.137, "lon": 11.5752 },
+    "country": "none"
+  }
+}
