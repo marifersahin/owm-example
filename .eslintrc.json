@@ -1,6 +1,6 @@
 {
   "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["jest", "prettier"],
   "parserOptions": {
     "ecmaVersion": 11
   },
