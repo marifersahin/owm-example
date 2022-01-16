@@ -11,7 +11,7 @@ const queryParams = {
 };
 
 function WeatherPanel() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [dataError, setDataError] = useState(null);
 
