@@ -5,13 +5,11 @@ import { ReactComponent as Sun } from "../../../../assets/icons/weather-sun.svg"
 import { ReactComponent as Cloud } from "../../../../assets/icons/weather-cloud.svg";
 
 function WeatherItem({ item, onClickHandler, isSelected }) {
-  const time = new Date(item.dt_txt);
+  const time = new Date(item.dt_txt.replace(/ /g, "T"));
 
   const formatDate = (date) => {
-    const hours =
-      date.getHours() < 10 ? `0${date.getHours()}` : date.getHours();
-    const minutes =
-      date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes();
+    const hours = (date.getHours() < 10 ? "0" : "") + date.getHours();
+    const minutes = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
     return `${hours}:${minutes}`;
   };
 

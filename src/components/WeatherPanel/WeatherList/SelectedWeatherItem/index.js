@@ -8,19 +8,21 @@ const options = {
   weekday: "long",
   month: "long",
   day: "numeric",
+  timezone: "Europe/Berlin",
 };
 function SelectedWeatherItem({ item }) {
-  const time = new Date(item.dt_txt);
-
-  const formatDate = (date) => date.toLocaleDateString("en-de", options);
+  const time = new Date(item.dt_txt.replace(/ /g, "T")); // A fix for Safari Date parser
 
   return (
-    <div className="flex flex-col items-center justify-center flex-1 px-4 py-8 sm:items-start sm:flex-row md:gap-x-8 lg:gap-x-16">
+    <div
+      data-testid="weather-detail"
+      className="flex flex-col items-center justify-center flex-1 px-4 py-8 sm:items-start sm:flex-row md:gap-x-8 lg:gap-x-16"
+    >
       <div className="flex flex-col items-center p-4 basis-1/4">
         {item.weather[0].main === "Clear" ? (
-          <Sun className="w-32 md:w-48 lg:w-64" />
+          <Sun className="w-32 md:w-44 lg:w-56" />
         ) : (
-          <Cloud className="w-32 md:w-48 lg:w-64" />
+          <Cloud className="w-32 md:w-44 lg:w-56" />
         )}
       </div>
       <div className="flex flex-col p-4 space-y-4 sm:space-y-8 basis-1/4">
@@ -40,7 +42,7 @@ function SelectedWeatherItem({ item }) {
           Munich
         </h2>
         <div className="text-4xl font-bold md:text-5xl lg:text-6xl">
-          {formatDate(time)}
+          {time.toLocaleDateString("en-en", options)}
         </div>
       </div>
     </div>

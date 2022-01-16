@@ -27,7 +27,6 @@ function WeatherPanel() {
       .catch((error) => {
         setDataError(error);
       });
-
     setIsLoading(false);
   };
 

@@ -12,6 +12,16 @@ function WeatherList({ data }) {
     setSelectedItem(item);
   };
 
+  if (!list?.length) {
+    return (
+      <div className="flex items-center justify-center flex-1">
+        <div className="text-xl">
+          No weather data available for this location.
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col flex-1 overflow-hidden">
       <div className="flex items-center justify-center flex-1">
@@ -23,7 +33,10 @@ function WeatherList({ data }) {
           </div>
         )}
       </div>
-      <div className="flex px-4 py-8 space-x-4 overflow-x-auto">
+      <div
+        className="flex px-4 py-8 space-x-4 overflow-x-auto"
+        data-testid="weather-list"
+      >
         {list?.map((item) => (
           <WeatherItem
             key={item.dt}
